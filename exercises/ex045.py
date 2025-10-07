@@ -23,5 +23,5 @@ elif jogada_do_usuario == 'TESOURA' and jogada_do_computador == 'PAPEL':
 else:
     print('Jogada Invalida')
 
-print(f'{jogada_do_computador}')
-print(f'{jogada_do_usuario}')
+print(f'Jogada do usuario:{jogada_do_usuario}')
+print(f'Jogada do computador:{jogada_do_computador}')
