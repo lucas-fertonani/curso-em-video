@@ -1,97 +1,96 @@
-#renda=(input('qual é sua renda atual?'))
-#print('Sua renda atual eh de{}!'.format(renda))
-
-#nome=input('qual eh seu nome?')
-#print('Prazer em te conhecer{}!'.format(nome))
-
-#n1=int(input('Digite um valor:'))
-#n2=int(input('Digite outro valor:'))
-#print('Sua soma eh de {}!'.format(n1+n2))
-
-#n1=(input('digite um valor'))
-#print(type(n1))
-
-#n1 = int(input('Digite uma base: '))
-#n2 = int(input('Digite um exponente: '))
-#print ('Sua potencia da o resultado de {}!'.format(n1**n2))
-
-#n1 = int(input('Digite um dividendo: '))
-#n2= int(input('Digite um divisor: '))
-#print('O resto da sua divisão eh {}!'.format(n1/n2))
-
-#n1 = int(input('Digite um dividendo: '))
-#print('Sua divisão inteira é de {}!'.format(n1//n2))
-
-#n1 = int(input('Digite um valor: '))
-#n2 = int(input('Digite outro valor: '))
-#s=n1 + n2
-#m=n1 * n2
-#d=n1 / n2
-#di=n1 // n2
-#e=n1 ** n2
-#print('A soma eh {} a multplicação eh {} e a divisão eh {:.3f}'.format(s,m,d))
-#print('A divisão inteira eh {} e a potência eh {}'.format(di,e))
-
-#frase = 'Curso em video phyton'
-#print('Tem quatro {} letras o nessa frase'.format(frase.count('o')))
-
-##print(frase.split())
 
 
-#print("""A amizade consegue ser tão complexa.
-#Deixa uns desanimados, outros bem felizes.
-#É a alimentação dos fracos
-#É o reino dos fortes.
 
-#Faz-nos cometer erros
-#Os fracos deixam se ir abaixo
-#Os fortes erguem sempre a cabeça
-#Os assim assumem-nos.
+#senha_correta = 'Nhandeara80'
+#pergunta = ''
+#while senha_correta != pergunta:
+#    pergunta = input('Digite sua senha: ')
+#print('Sucesso')
 
-#Sem pensar conquistamos
-#o mundo geral
-#e construímos o nosso pequeno lugar,
-#deixando brilhar cada estrelinha.
 
-#Estrelinhas.
-#Doces, sensíveis, frias, ternurentas.
-#Mas sempre presentes em qualquer parte.
-#Os donos da amizade.""")
+
+#result = []
+#somar_nota = 0
+#hile True:
+#    pergunta_nota = float(input('Digite sua nota: '))
+#    if pergunta_nota <= -1:
+#       break
+#    else:
+#        result.append(pergunta_nota)
+#print('A media de todas essas notas sao:',sum(result)/len(result))
+
+
+#saldo_atual = 500
+#deposito = 700
+#hile True:
+#   print('Bom dia senhor! qual desses opções você quer?')
+#    print('Ver Saldo [1]')
+#    print('Fazer depósito [2]')
+#   print('Sair [3]')
+#    escolha = int(input('Faça sua escolha: '))
+#    if escolha == 1:
+#       print('Seu saldo e de 500 reais')
+#    if escolha == 2:
+#        deposito = float(input('Digite quando voce quer depositar: '))
+#    if deposito > saldo_atual:
+#       print('Deposito Negado!')
+ #       print('Deposito feito com sucesso!')
+ #   if escolha == 3:
+ #       break
+
+#ex007 sobre o while:Crie um jogo simples onde o programa "pensa" em um número e o usuário tenta adivinhar.
 #import random
-#jogada_do_usuario = input('Qual será sua jogada PEDRA,PAPEL OU TESOURA:')
-#lista = ['PEDRA','PAPEL','TESOURA']
-#jogada_do_computador = random.choices(lista)
-#if  jogada_do_usuario == jogada_do_computador:
-    #print('Empate')
+#list = [0,1,2,3,4,5,6,7,8,9,10]
+#jogada_do_computador = random.choice(list)
+#jogada_do_usuario = ''
+#contador = 0
+#while jogada_do_usuario != jogada_do_computador:
+#    jogada_do_usuario = int(input('Digite um número: '))
+#    contador += 1
+#print(f'Parabéns você adivinhou o número {jogada_do_computador} em {contador} tentativas!')
 
-#if jogada_do_usuario == 'TESOURA' and jogada_do_computador == 'PEDRA':
-    # print('Você perdeu')
+idade = ''
+while True:
+    idade = int(input('Digite sua idade: '))
+    if idade != int:
+        print('Desculpe so aceitamos numeros')
+    if idade > 120 or idade < 0:
+        print('Insira um valor razóavel')
+    else:
+        break
 
-#if jogada_do_usuario == 'TESOURA' and jogada_do_computador == 'PAPEL':
-   # print('Você ganhou!')
+#inversor = ''
+#ergunta = ''
+#contador = 0 
+#while not pergunta:
+#    pergunta = str(input('Qual palavra voce quer inverter: '))
+#    inversor = pergunta[::-1]
+#print(inversor)
 
-#if jogada_do_usuario == 'PEDRA' and jogada_do_computador == 'PAPEL':
-  #  print('Você perdeu!')
+#numero_final = 50
+#numero_incial = 1
+#somar = 0 
+#hile numero_incial < numero_final:
+#    print('Vou colocar os numeros de 0 a 50 impares')
 
-#if jogada_do_usuario == 'PEDRA' and jogada_do_computador == 'TESOURA':
- #   print('Você ganhou')
 
-#if jogada_do_usuario == 'PAPEL' and jogada_do_computador == 'TESOURA':
-#    print('Você perdeu!')
-
-#if jogada_do_usuario == 'PAPEL' and jogada_do_computador == 'PEDRA':
- #   print('Você ganhou!')
-
-nome_de_usuario = 'Lucas'
-senha = 'Abcd1234'
-pergunta_usuario = input('Qual é seu nome de usuario: ')
-pergunta_senha = str(input('Digite sua senha: '))
-if not nome_de_usuario == pergunta_usuario:
-    print('Usuario errado!')
-else:
-    print(' ')
-if not senha == pergunta_senha:
-    print('Senha Incorreta tente novamente!')
-if senha == pergunta_senha:
-    print('Acesso-liberado,bem-vindo Lucas!')
-
+total_pedido = []
+pizza = 50.90
+refri = 10.80
+while True:
+    print('Pizza 50,90R$')
+    print('Refri 10,80R$')   
+    print('Qual vai ser sua opção?')
+    print('Pizza [1]')
+    print('Refri [2]')
+    print('Finalizar [3]')
+    escolha = int(input('Digite qual voce quer: '))
+    if escolha == 1:
+        print('Pizza adicionado ao seu pedido!')
+    if escolha == 2:
+        print('Refri adicionado ao seu pedido ')
+    if escolha != 1 or 2 or 3:
+        print('Opcao invalida')
+    if escolha == 3:
+        print(f'Seu pedido total deu ')
+        break
