@@ -1,3 +1,118 @@
+
+media = []
+homem_mais_velho = ''
+mulher_menos_de_20 = 0
+
+for idx in range (0,4):
+    nome = input('Digite seu nome: ')
+    idade = int(input('Digite sua idade: '))
+    genero = input('Digite seu genero [M/F]: ').upper()
+    media.append(idade)
+    if idade < 20 and genero == 'F':
+        mulher_menos_de_20 =+ 1
+    if idade < idade and genero == 'M':
+        homem_mais_velho = len(nome)
+print(f'A media de idade desse cadastro eh {sum(media)/len(media)} anos')
+print(f'O homem mais velho desse cadastro eh {homem_mais_velho}')
+print(f'Existem {mulher_menos_de_20} mulheres com menos de 20 anos')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #ex056
 
 
