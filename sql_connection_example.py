@@ -35,12 +35,3 @@ def get_records():
     return records
 
 
-# count_woman = 0
-# while True:
-#     name = str(input('Nome: '))
-#     age = int(input('Idade: '))
-#     gender = str(input('Sexo: [M/F]: ')).upper()
-#     save_record_on_memory(name, age, gender)
-
-
-# save_record_on_memory('Carlos', 71, 'M')
