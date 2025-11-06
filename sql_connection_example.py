@@ -23,15 +23,19 @@ def save_record_on_memory(name: str, age: int, gender: str):
     cursor.close()
     conn.close()
 
-def get_records():
+
+
+
+
+#DESAFIO
+def airport():
     conn = get_conn()
     cursor = conn.cursor()
     cursor.execute(
-        "SELECT * FROM users"
+        "SELECT name_airport FROM airport"
     )
-    records = cursor.fetchall()
+    get = cursor.fetchall()
     cursor.close()
     conn.close()
-    return records
-
-
+    return get
+print(airport())
