@@ -49,15 +49,7 @@
 #    contador += 1
 #print(f'Parabéns você adivinhou o número {jogada_do_computador} em {contador} tentativas!')
 
-idade = ''
-while True:
-    idade = int(input('Digite sua idade: '))
-    if idade != int:
-        print('Desculpe so aceitamos numeros')
-    if idade > 120 or idade < 0:
-        print('Insira um valor razóavel')
-    else:
-        break
+
 
 #inversor = ''
 #ergunta = ''
@@ -72,25 +64,8 @@ while True:
 #somar = 0 
 #hile numero_incial < numero_final:
 #    print('Vou colocar os numeros de 0 a 50 impares')
-
-
-total_pedido = []
-pizza = 50.90
-refri = 10.80
-while True:
-    print('Pizza 50,90R$')
-    print('Refri 10,80R$')   
-    print('Qual vai ser sua opção?')
-    print('Pizza [1]')
-    print('Refri [2]')
-    print('Finalizar [3]')
-    escolha = int(input('Digite qual voce quer: '))
-    if escolha == 1:
-        print('Pizza adicionado ao seu pedido!')
-    if escolha == 2:
-        print('Refri adicionado ao seu pedido ')
-    if escolha != 1 or 2 or 3:
-        print('Opcao invalida')
-    if escolha == 3:
-        print(f'Seu pedido total deu ')
-        break
+lista = []
+for c in range(0,3):
+    pergunta = int(input('Valor: '))
+    lista.append(pergunta)
+print(lista)
