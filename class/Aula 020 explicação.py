@@ -48,3 +48,24 @@ def message(mensg):
 message('ALISTAMENTO MILITAR')
 message('TOP 10 COMIDAS DO BRASIL')
 message('AS 7 MARAVILHAS DO MUNDO')
+
+
+#Como empacotar dados com o sistema de Funções:
+def count(* number):
+    print(number)
+
+
+count(14, 2, 4, 5, 7)
+count(542, 1000)
+
+
+#Definições com listas
+def dobra(list):
+    position = 0
+    while position < len(list):
+        list[position]*=2 
+        position =+ 1
+strings = ['BATATA','ARROZ','CARNE','FEIJÃO']
+dobra(strings)
+
+
