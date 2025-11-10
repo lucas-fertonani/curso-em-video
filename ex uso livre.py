@@ -64,8 +64,5 @@
 #somar = 0 
 #hile numero_incial < numero_final:
 #    print('Vou colocar os numeros de 0 a 50 impares')
-lista = []
-for c in range(0,3):
-    pergunta = int(input('Valor: '))
-    lista.append(pergunta)
-print(lista)
+for c in range(10,0):
+    print(c)
