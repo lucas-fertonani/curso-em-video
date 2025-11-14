@@ -89,3 +89,20 @@ def numeros(x):
 
 y = 82
 numeros(y)
+
+
+
+#Retornando Valores  ->return
+#Para retornar os valores no python usamos o: return
+#exemplo do return
+
+def divisao(t,y,g):
+    d = t/y/g
+    return d
+
+resp_1 = divisao(45,5,3)
+resp_2 = divisao(8,2,4)
+resp_3 = divisao(452,4,2)
+print(f'As divisões deram seus quocientes de {resp_1} {resp_2} e {resp_3}')
+#Ou seja ela vai colocar dentro de uma variavel a função
+
