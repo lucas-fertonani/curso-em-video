@@ -11,6 +11,8 @@ for i in range(5):
 
 def sorteia():
     print(f'Sorteado os valores da lista {numeros} valores')
+
+    
 def somaPar():
     s = 0
     for pos,num in enumerate(numeros):
